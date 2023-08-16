@@ -4,7 +4,7 @@ int main()
 	int num,d,rev=0;
 	printf("enter the num\n");
 	scanf("%d",&num);
-	while(num>0)
+	while(num!=0)
 	{
 		d=num%10;
 		rev=rev*10+d;
