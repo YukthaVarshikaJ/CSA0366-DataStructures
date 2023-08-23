@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	int val,i,p,n,flag=0;
+	int a[]={70,40,30,11,57,41,25,14,52};
+	n=sizeof(a)/sizeof(a[0]);
+	printf("enter the number\n");
+	scanf("%d",&val);
+	for(i=0;i<n;i++)
+	if(a[i]==val)
+	{
+		flag=1;
+		p=i;
+	}
+	if(flag==1)
+	printf("given number %d is found at %d",val,p+1);
+	else
+	printf("given number  is not found");
+}
